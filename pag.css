@@ -4,7 +4,22 @@ body {
   background-color: #000000;
   text-align: center;
 }
+.music-button {
+  background-color: #ff5e7d;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
 
+.music-button:hover {
+  background-color: #e04c6a;
+}
 .container {
   padding: 20px;
 }
