@@ -47,3 +47,13 @@ function playMusic() {
       alert("Erro ao tentar tocar a música: " + error.message);
     });
 }
+
+// Quando sair da página, parar a música
+document.addEventListener("visibilitychange", function () {
+  const audio = document.getElementById("musica");
+  if (document.hidden && audio) {
+    audio.pause();
+  } else if (!document.hidden && audio.paused) {
+    audio.play();
+  }
+});
