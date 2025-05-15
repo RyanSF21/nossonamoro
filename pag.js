@@ -32,3 +32,18 @@ function moverCarrossel() {
 }
 
 setInterval(moverCarrossel, 3000); // Troca de imagem a cada 3 segundos
+
+function playMusic() {
+  const audio = document.getElementById("musica");
+  const button = document.getElementById("playButton");
+
+  audio.loop = true; // Garante o loop via JS
+  audio
+    .play()
+    .then(() => {
+      button.classList.add("hidden");
+    })
+    .catch((error) => {
+      alert("Erro ao tentar tocar a música: " + error.message);
+    });
+}
