@@ -16,7 +16,7 @@ function atualizarContador() {
 
   document.getElementById(
     "contador"
-  ).textContent = `${anos} anos, ${meses} meses e ${dias} dias de namoro`;
+  ).textContent = `${anos} anos, ${meses} meses e ${dias} dias`;
 }
 
 // Atualiza o contador a cada segundo
@@ -57,3 +57,29 @@ document.addEventListener("visibilitychange", function () {
     audio.play();
   }
 });
+
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerText = "❤";
+
+  // Posição aleatória na horizontal
+  heart.style.left = Math.random() * 100 + "vw";
+
+  // Tamanho aleatório (pequenos)
+  const size = Math.random() * 10 + 10;
+  heart.style.fontSize = size + "px";
+
+  // Velocidade diferente para cada um (duração da animação)
+  heart.style.animationDuration = Math.random() * 2 + 3 + "s";
+
+  document.body.appendChild(heart);
+
+  // Remover depois de um tempo
+  setTimeout(() => {
+    heart.remove();
+  }, 5000);
+}
+
+// Criar um coração a cada 300ms
+setInterval(createHeart, 300);
