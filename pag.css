@@ -30,7 +30,7 @@ h1 {
 }
 h2 {
   font-family: "Dancing Script", cursive;
-  font-size: 1.1em;
+  font-size: 1.3em;
   color: #c71585;
   margin-bottom: 10px;
 }
@@ -45,7 +45,8 @@ p {
   font-size: 1.2em;
   color: #ffffff;
   margin-top: 10px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .carousel {
